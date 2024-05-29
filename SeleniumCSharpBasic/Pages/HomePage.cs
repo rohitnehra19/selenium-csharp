@@ -11,6 +11,9 @@ namespace SeleniumCSharpBasic.Pages
 
             try
             {
+
+                Thread.Sleep(3000);
+
                 // Wait for loader spinner to disappear
                 WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
                 wait.Until(d => d.FindElement(By.ClassName("loader")).Displayed == false);

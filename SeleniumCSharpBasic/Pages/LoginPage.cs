@@ -7,10 +7,16 @@ namespace SeleniumCSharpBasic.Pages
     {
         public LoginPage(IWebDriver driver) : base(driver)
         {
-            // Wait for the username element to be displayed
-            new WebDriverWait(driver, TimeSpan.FromSeconds(20)).
-             Until(d => d.FindElement(By.ClassName("create-new-account")).Enabled);
+
+            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+            wait.Until(d => d.FindElement(By.ClassName("loader")).Displayed == false);
+
+            // Wait for the create new account element to be enabled
+            wait.Until(d => d.FindElement(By.ClassName("create-new-account")).Enabled);
+
         }
+
+
 
         public AccountPage ClickCreateAccount()
         {
