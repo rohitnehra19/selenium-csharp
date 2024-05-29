@@ -1,0 +1,72 @@
+# Build Folders (you can keep bin if you'd like to check binaries into VCS)
+bin/
+obj/
+TestResults/
+
+# VS Code settings
+.vscode/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Mono Auto Generated Files
+mono_crash.*
+
+# Windows image file caches
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code directories
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# DotNet specific folders and files
+.DS_Store
+*.nupkg
+*.snupkg
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# JetBrains Rider specific
+.idea/
+*.sln.iml
+
+# Resharper
+_ReSharper*
+*.DotSettings.user
+
+# NCrunch
+*.ncrunchsolution
+*.ncrunchproject
+
+# Azure Pipelines
+.nuget/
+
+# Selenium specific files
+selenium-standalone/
+geckodriver.log
+
+# Ignore Allure results
+allure-results/
+
+# Log files
+*.log
+
+# Additional configurations
+config/
